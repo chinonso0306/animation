@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sky{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./sky.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.building{
+    width: 170%;
+    height: 300px;
+    background-image: url(./13-133022_building-png-picture-city-building-background-png.png);
+    position: relative;
+    bottom: -200px;
+    animation-name: building;
+    animation-timing-function: linear;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes building {
+    100%{
+        translate: -600px;
+    }
+}
+
+.road{
+    width: 200%;
+    height: 200px;
+    background-image: url(./road.jpg);
+    position: relative;
+    bottom: -180px;
+     animation-name: road;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes road {
+    100%{
+        translate: -1000px;
+    }
+    
+}
+
+
+.plane{
+   width: 500px;
+   animation-name: plane;
+    animation-timing-function: linear;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes plane {
+    100%{
+        translate: 1700px;
+    }
+} 
+
+
+#img1{
+    width: 400px;
+    position: relative;
+    bottom: 500px;
+}
+
+.bird{
+    width: 100px;
+}
+#img2{
+    width: 250px;
+    position: relative;
+    bottom: 450px;
+    left: 400px;
+}
+
+.car1{
+    width:100px ;
+}
+
+#img3{
+    width: 450px;
+    position: relative;
+    bottom: 400px;
+    left: 100px;
+}
+
+.car2{
+    width:100px ;
+}
+
+#img4{
+    width: 450px;
+    position: relative;
+    bottom: 570px;
+    left: 650px;   
+}
+
+.tyre1{
+    width:100px ;
+    
+}
+
+.tyrefront{
+    width: 80px;
+    position: relative;
+    bottom: 710px;
+    left: 140px;
+animation-name: wheel3;
+animation-timing-function: linear;
+animation-duration: 8s;
+animation-iteration-count: infinite;
+}
+
+@keyframes wheel3 {
+100%{
+    transform: rotate(3030deg);
+}
+}
+
+.tyreback{
+    width: 80px;
+    position: relative;
+    bottom: 795px;
+    left: 430px;
+    animation-name: wheel3;
+animation-timing-function: linear;
+animation-duration: 8s;
+animation-iteration-count: infinite;
+}
+
+@keyframes wheel3 {
+100%{
+    transform: rotate(3030deg);
+}
+}
+.tyre2{
+    width:100px ;
+}
+
+.tyref{
+    width: 80px;
+    position: relative;
+    bottom: 850px;
+    left: 700px;
+    animation-name: wheel3;
+animation-timing-function: linear;
+animation-duration: 8s;
+animation-iteration-count: infinite;
+}
+
+@keyframes wheel3 {
+100%{
+    transform: rotate(3030deg);
+}
+
+}
+.tyreb{
+    width: 80px;
+    position: relative;
+    bottom: 930px;
+    left: 965px;
+    animation-name: wheel3;
+animation-timing-function: linear;
+animation-duration: 8s;
+animation-iteration-count: infinite;
+}
+
+@keyframes wheel3 {
+100%{
+    transform: rotate(3030deg);
+}
+} 
+
+@media (max-width:600px){
+    .road{
+        margin-bottom: 100px;
+        width: 2000px;
+    
+    }
+    .building{
+        width: 2000px;
+    }
+
+    .plane{
+        margin-left: 0;
+        animation-duration: 10s;
+    }
+    .plane img{
+        width: 100px !important;
+    }
+    .car1 img{
+        left: 50% !important;
+        width: 180px !important;
+    }
+    .tyrefront{
+        width: 30px !important;
+        left: 185px;
+        margin-bottom: 85px !important;
+    }    
+    .tyreback{
+        left: 32px;
+        width: 30px !important;
+        margin-top: 110px;
+    }
+    .car2{
+        padding-top: 160px;
+    }
+    .car2 img{
+        left: 0 !important;
+        width: 180px !important;
+    }
+    .tyre2{
+        position: relative;
+        left: 0 !important;
+    }
+    .tyref{
+        left: 20px !important;
+        width: 30px;
+        margin-bottom: -105px;
+    }
+    .tyreb{
+        left: 90px !important;
+        margin-bottom: -185px;
+        width: 30px;
+    }
+    #img2{
+        left: 0 !important;
+        /* width: 100px; */
+        /* bottom: 10px; */
+    }
+}
